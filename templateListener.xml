@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/templateListener.xsd">
+	<import>
+		<!-- user -->
+		<templatelistener name="hytaleSyncCopyright">
+			<environment>user</environment>
+			<templatename>pageFooterCopyright</templatename>
+			<eventname>copyright</eventname>
+			<templatecode><![CDATA[{include file='__hytaleSyncCopyright'}]]></templatecode>
+		</templatelistener>
+		<!-- /user -->
+		<!-- admin -->
+		<templatelistener name="groupAddSection">
+			<environment>admin</environment>
+			<templatename>userGroupAdd</templatename>
+			<eventname>sections</eventname>
+			<templatecode><![CDATA[{include file='__hytaleSyncGroupAddSection'}]]></templatecode>
+		</templatelistener>
+		<!-- /admin -->
+	</import>
+</data>

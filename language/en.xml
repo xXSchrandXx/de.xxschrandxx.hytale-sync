@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language languagecode="en"
+	xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/language.xsd">
+	<category name="wcf.acp.form">
+		<item name="wcf.acp.form.hytaleGroupAdd.formTitle.add"><![CDATA[Add Hytale-Group]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.formTitle.edit"><![CDATA[Edit Hytale-Group]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.hytaleName"><![CDATA[Hytale-Groupname]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.hytaleName.description"><![CDATA[Name or number of the Hytale group on the Hytale server.]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.hytaleName.error.duplicate"><![CDATA[An entry with this Hytale group name already exists.]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.shouldHave"><![CDATA[Assign]]></item>
+		<item name="wcf.acp.form.hytaleGroupAdd.shouldHave.description"><![CDATA[<p>If so, the group will be assigned on the Hytale server.</p>
+<p>If no, the group will be removed from the Hytale server.</p>]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.hytaleSection.hytaleSync.sectionTitle"><![CDATA[Hytale-Sync]]></item>
+		<item name="wcf.acp.group.hytaleSection.hytaleSync.list.hytaleName"><![CDATA[Hytale-Groupname]]></item>
+		<item name="wcf.acp.group.hytaleSection.hytaleSync.list.shouldHave"><![CDATA[Assign]]></item>
+		<!-- userGroupOption -->
+		<item name="wcf.acp.group.option.admin.hytaleSync.canManage"><![CDATA[Can manage Hytale-Sync]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.hytale_sync"><![CDATA[Hytale-Sync]]></item>
+		<item name="wcf.acp.option.category.hytale_sync_general"><![CDATA[General Settings]]></item>
+		<item name="wcf.acp.option.hytale_sync_enabled"><![CDATA[Enable Hytale-Sync]]></item>
+		<item name="wcf.acp.option.hytale_sync_enabled.description"><![CDATA[<p>Enables / disables Hytale-Sync.</p>
+<p>Link for plugin configuration: <kbd>{link controller='HytaleSyncGetGroups' forceFrontend=true}{/link}</kbd></p>]]></item>
+		<item name="wcf.acp.option.hytale_sync_identity"><![CDATA[Server]]></item>
+	</category>
+	<category name="wcf.copyright">
+		<item name="wcf.copyright.hytale-sync"><![CDATA[xXSchrandXx's Hytale-Sync]]></item>
+	</category>
+</language>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/option.xsd">
+	<import>
+		<categories>
+			<category name="hytale_sync">
+				<parent>hytale</parent>
+			</category>
+			<category name="hytale_sync_general">
+				<parent>hytale_sync</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="hytale_sync_enabled">
+				<categoryname>hytale_sync_general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>hytale_sync_identity,hytale_sync_entries_per_call</enableoptions>
+			</option>
+			<option name="hytale_sync_identity">
+				<categoryname>hytale_sync_general</categoryname>
+				<optiontype>HytaleConnectionMultiSelect</optiontype>
+			</option>
+			<option name="hytale_sync_branding">
+				<categoryname>hytale_sync_general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<hidden>1</hidden>
+			</option>
+		</options>
+	</import>
+</data>

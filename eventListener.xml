@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="https://www.woltlab.com"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.5/eventListener.xsd">
+	<import>
+		<!-- Fügt groupOptionen hinzu -->
+		<eventlistener name="hytaleACPGroupAdd">
+			<eventclassname>wcf\acp\form\UserGroupAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>admin</environment>
+			<inherit>1</inherit>
+			<listenerclassname>wcf\system\event\listener\HytaleSyncAcpGroupAddListener</listenerclassname>
+		</eventlistener>
+		<!-- Fügt Branding zu den Hytale-Linker Seiten hinzu -->
+		<eventlistener name="hytaleSyncBrandingUserAddForm">
+			<eventclassname>wcf\form\HytaleUserAddForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\HytaleSyncBrandingListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="hytaleSyncBrandingUserEditForm">
+			<eventclassname>wcf\form\HytaleUserAddEdit</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\HytaleSyncBrandingListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="hytaleSyncBrandingUserCheckForm">
+			<eventclassname>wcf\form\HytaleUserCheckForm</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\HytaleSyncBrandingListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="hytaleSyncBrandingUserListPage">
+			<eventclassname>wcf\page\HytaleUserListPage</eventclassname>
+			<eventname>assignVariables</eventname>
+			<environment>all</environment>
+			<listenerclassname>wcf\system\event\listener\HytaleSyncBrandingListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>
