@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.xxschrandxx.wsc.hytale-sync"
+<package name="de.xxschrandxx.hytale-sync"
 	xmlns="https://www.woltlab.com"
 	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/package.xsd">
 	<packageinformation>
@@ -17,12 +17,12 @@
 
 	<requiredpackages>
 		<requiredpackage minversion="6.0.0 RC 2">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="1.0.0">de.xxschrandxx.wsc.hytale-linker</requiredpackage>
+		<requiredpackage minversion="1.0.0">de.xxschrandxx.hytale-linker</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
 		<excludedpackage version="7.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-		<excludedpackage version="2.0.0">de.xxschrandxx.wsc.hytale-linker</excludedpackage>
+		<excludedpackage version="2.0.0">de.xxschrandxx.hytale-linker</excludedpackage>
 	</excludedpackages>
 
 	<instructions type="install">
